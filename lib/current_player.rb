@@ -5,11 +5,9 @@ board.each do |spaces|
     counter += 1
   end
 end
+counter
+end
 
 def current_player(board)
-  if turn_count(board) % 2 == 0
-    gets "X"
-  else
-    gets "O"
-  end
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
